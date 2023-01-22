@@ -50,13 +50,7 @@ pipeline {
  
             }
         }
- stage('Run Docker container on remote hosts') {
-             
-            steps {
-                sh "docker -H ssh://ubuntu@13.59.65.76 run -d -p 8004:8080 akshayamurali/samplewebapp"
  
-            }
-        }
     }
 	}
     
